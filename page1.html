@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modal Verbs - Practice</title>
+</head>
+<body>
+
+    <style>
+        h1 {
+            letter-spacing: 1px;
+            font-size: 25px;
+        }
+    </style>
+
+    <audio id="right" src="assets/blip.wav"></audio>
+    <audio id="wrong" src="assets/uhoh.wav"></audio>
+    <div class="heading-container">
+        <h1>Identify The Function of 'Should'</h1>
+    </div>
+
+    <div class="score-container">
+        <h2 class="score">Score : <span id="score" class="score-number">0</span> </h2>
+    </div>
+
+    <!--Line 01-->
+    <div class="questions-container">
+       <div class="sentence">You <span id="word1" class="words">should</span> take an umbrella - it's going to rain.</div>
+       <div id="slot1" class="item"></div>
+       <div class="buttons-container">
+            <button id="btn1Possibility" class="buttons">Possibility</button>
+            <button id="btn1Advice" class="buttons">Advice</button>
+            <button id="btn1Expected" class="buttons">Expected</button>
+        </div>
+    </div> 
+ 
+
+      <!--Line 02-->
+
+      <div class="questions-container">
+        <div class="sentence"><span id="word2" class="words">Should</span> anyone ask for me, I'll be in the office.</div>
+        <div id="slot2" class="item"></div>
+        <div class="buttons-container">
+             <button id="btn2Possibility" class="buttons">Possibility</button>
+             <button id="btn2Advice" class="buttons">Advice</button>
+             <button id="btn2Expected" class="buttons">Expected</button>
+         </div>
+     </div> 
+
+        <!--Line 03-->
+
+        <div class="questions-container">
+            <div class="sentence">Where's Jack? He<span id="word3" class="words">should</span> be here by now.</div>
+            <div id="slot3" class="item"></div>
+            <div class="buttons-container">
+                 <button id="btn3Possibility" class="buttons">Possibility</button>
+                 <button id="btn3Advice" class="buttons">Advice</button>
+                 <button id="btn3Expected" class="buttons">Expected</button>
+             </div>
+         </div> 
+
+         <!--Line 04-->
+
+        <div class="questions-container">
+            <div class="sentence">You<span id="word4" class="words">should</span> take the subway - it's the easiest way to get there.</div>
+            <div id="slot4" class="item"></div>
+            <div class="buttons-container">
+                 <button id="btn4Possibility" class="buttons">Possibility</button>
+                 <button id="btn4Advice" class="buttons">Advice</button>
+                 <button id="btn4Expected" class="buttons">Expected</button>
+             </div>
+         </div> 
+
+              <!--Line 05-->
+
+        <div class="questions-container">
+            <div class="sentence">Who<span id="word5" class="words">should</span> I make out this check to?</div>
+            <div id="slot5" class="item"></div>
+            <div class="buttons-container">
+                 <button id="btn5Possibility" class="buttons">Possibility</button>
+                 <button id="btn5Advice" class="buttons">Advice</button>
+                 <button id="btn5Expected" class="buttons">Expected</button>
+             </div>
+         </div> 
+
+         <!--Line 06-->
+
+         <div class="questions-container">
+            <div class="sentence">He<span id="word6" class="words">should</span> take a vacation. He's stressed out!</div>
+            <div id="slot6" class="item"></div>
+            <div class="buttons-container">
+                 <button id="btn6Possibility" class="buttons">Possibility</button>
+                 <button id="btn6Advice" class="buttons">Advice</button>
+                 <button id="btn6Expected" class="buttons">Expected</button>
+             </div>
+         </div> 
+      
+
+
+    <script src="script.js"></script>
+</body>
+</html>

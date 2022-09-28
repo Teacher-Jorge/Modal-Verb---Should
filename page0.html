@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lesson 3</title>
+</head>
+<body>
+
+    <audio id="click" src="assets/click.wav"></audio>
+
+    <style>
+     .page0-container {
+    margin: 0 auto;
+    margin-top: 5px;
+    width: 340px;
+    height: 135px;
+    border: 1px solid skyblue;
+    display: flex;
+    justify-content: start;
+    padding: 5px
+}
+
+.title-heading {
+    font-family: 'bangers';
+    font-size: 2rem;
+    color: dodgerblue;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    text-shadow: 1px 1px 2px black;
+    letter-spacing: 1px;
+    animation: transitionIn 1s;
+}
+
+.example {
+    color: dodgerblue;
+    font-family: 'Carter one';
+}
+
+    .indication {
+        color: red;
+    }
+
+    .btn {
+    position: absolute;
+    margin-top: 10px;
+    font-family: 'bangers';
+    font-size: 35px;;
+    color:rgb(0, 183, 255);
+    text-shadow: 1px 1px 2px black;
+    background-color: #fff;
+    border-style: none;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: aliceblue;
+}
+
+.btn:active {
+    box-shadow: 1px 1px 2px rgb(0,0, 0, 0.7);
+}
+
+.strong {
+    color: rgb(0, 72, 131);
+}
+    </style>
+    <div class="title-heading">
+        <strong>Modal Verbs</strong>
+    </div>
+    <div class="page0-container">
+        <p>
+        <strong class="strong">Should</strong> - Deveria - (usado pra dizer ou perguntar qual a coisa correta ou melhor a ser feita) -<span class="indication"> Advice</span> <br>
+        <span class="example">
+            You <strong class="strong">should</strong> see a doctor. 
+        </span>(Você deveria ver (ir a) um médico.) <br>
+        <span class="example">
+            <strong class="strong">should</strong> I apologize to him? 
+        </span> (Eu deveria pedir desculpas pra ele? )</p> 
+    </div>
+
+    <div class="page0-container">
+        <p>
+        <strong class="strong">Should</strong> - Deveria -
+         (Usado pra mostrar quando algo é provável ou esperado) -<span class="indication"> Expected</span> <br>
+        <span class="example">
+            She <strong class="strong">should</strong> be here by now. 
+        </span>(Ela já deveria estar aqui.) 
+       </p> 
+    </div>
+
+    <div class="page0-container">
+        <p>
+        <strong class="strong">Should</strong> - Deveria -
+         (Usado quando se refere a um possível evento no futuro) -
+         <span class="indication"> Possibility</span> <br>
+        <span class="example">
+            <strong class="strong">Should</strong> you ever need anything, don't hesitate
+            to contact me. 
+        </span>(Caso você precise de alguma coisa, não hesite em me contatar.) 
+       </p> 
+    </div>
+
+  
+
+  
+
+
+
+    <div class="splash-button-container">
+        <button id="btnPractice" class="btn">Practice</button>
+    </div>
+    
+    <script>
+            let btnPractice = document.getElementById('btnPractice')
+
+        btnPractice.addEventListener('click', function() {
+        let audio = document.getElementById('click').play()
+    })
+        btnPractice.addEventListener('click', function() {
+            setTimeout(function() {
+            location.href = 'page1.html'
+            },100)
+        })
+    </script>
+
+</body>
+</html>

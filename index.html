@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modal Verbs</title>
+<style>
+
+    .splash {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: logo-load 2s;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+    .btnStart {
+    position: absolute;
+    margin-top: 100px;
+    font-family: 'bangers';
+    font-size: 3rem;
+    color:rgb(0, 183, 255);
+    text-shadow: 1px 1px 2px black;
+    background-color: #fff;
+    border-style: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    width: 200px;
+    height: 80px;
+    border-radius: 10px;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.btnStart:hover {
+    background-color: aliceblue;
+}
+
+.btnStart:active {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+</style>
+
+
+</head>
+<body>
+    <audio id="click" src="assets/click.wav"></audio>
+    
+        <div class="splash">
+            <img id="img-splash" src="assets/splash.png" alt="">    
+        </div>
+    
+        <div class="splash-button-container">
+            <button class="btnStart" id="btnStart">Start</button>
+        </div>
+    
+
+    <script>
+        window.onload = function() {
+            let btnStart = document.getElementById('btnStart')
+            setTimeout(function() {
+            btnStart.style.visibility = 'visible'
+            }, 1900)
+        }
+
+        btnStart.addEventListener('click', function () {
+            let audio = document.getElementById('click').play()
+        })
+        btnStart.addEventListener('click', function() {
+            setTimeout(function() {
+            location.href = 'page0.html'
+            },100)
+            
+        })
+        
+
+    </script>
+    
+</body>
+</html>
